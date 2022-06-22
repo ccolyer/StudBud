@@ -19,9 +19,7 @@ function logIn(email, password) {
     if (stringUser) {
         const user = JSON.parse(stringUser);
         if (email === user.email && password === user.password) {
-            // TODO: successfully logged in! (maybe navigate the user somewhere)
-            console.log('Successful login!');
-            // Probably look at changing / routing / navigating the page to the /dashboard URL
+            document.location.href = '/dashboard';
         } else {
             alert('Wrong email or password.');
         }

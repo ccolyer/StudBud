@@ -22,5 +22,7 @@ function createUser(email, name, password) {
         name,
         password
     }));
+    alert(`Congratulations ${name}, you are now a StudBud!`);
     console.log('User is:', localStorage.getItem('studBudUser'));
+    document.location.href = '/login';
 }

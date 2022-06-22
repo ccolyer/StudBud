@@ -62,6 +62,12 @@ function renderItem(title, url) {
     const delButton = document.getElementById(`deleteButton${id}`);
     delButton.addEventListener('click', event => {
         item.remove();
+
+        const stringReadings = localStorage.getItem('studBudReadings');
+        const listOfReadings = stringReadings ? JSON.parse(stringReadings) : [];
+        const index = listOfReadings.find(reading => reading.url === url);
+        listOfReadings.splice(index, 1);
+        localStorage.setItem('studBudReadings', JSON.stringify(listOfReadings));
     });
 }
 

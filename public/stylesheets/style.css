@@ -588,3 +588,11 @@ ul li.active a {
 #taskform{
   font-family: 'Brandon Grotesque';
 }
+
+.taskList {
+  margin-left: 30%;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

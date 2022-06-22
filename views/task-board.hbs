@@ -1,4 +1,4 @@
-<!---his is the Nav bar.-->
+<!---s is the Nav bar.-->
 <header>
   <div style="margin-left:97%;">
     <img id="accountlogo" src="images/account_logo.png" alt="" />
@@ -49,28 +49,23 @@
   <p class="PageInstruction">Create new tasks, drop and drag to organise them
     into appropriate categories.</p>
 
-  <form id="taskform" style="margin-left:30%; margin-top:20px;">
+  <form id="taskForm" style="margin-left:30%; margin-top:20px;">
     <label for="task">Task:</label>
-    <input type="text" name="task" id="taskInput" />
+    <input type="text" name="task" id="title" />
 
     <br />
     <!-- Date input -->
     <label for="dueDate">Due Date: </label>
-    <input type="date" name="dueDate" id="dueDateInput" />
+    <input type="date" name="dueDate" id="dueDate" />
     <br />
     <!-- Time input -->
-    <label for="completionTime">Completion Time: </label>
-    <input type="time" name="completionTime" id="completionTimeInput" />
-
-    <br />
-
     <label for="estimatedTime">Estimated completion time (in mins):</label>
-    <input type="number" name="estimatedTime" id="estimatedTimeInput" />
+    <input type="number" name="estimatedTime" id="estCompletionTime" />
     <!-- Priority -->
     <br />
 
     <label for="priority">Task Priority:</label>
-    <select name="prority" id="priorityInput">
+    <select name="prority" id="priority">
       <option value="">Select one</option>
       <option value="Low">Low</option>
       <option value="Medium">Medium</option>
@@ -81,7 +76,7 @@
 
     <button type="submit">Submit</button>
   </form>
-  <ul id="tasklist">
+  <ul id="taskList" class="taskList">
   </ul>
-  <script src="solution.js"></script>
 </body>
+<script src="javascripts/task-board.js"></script>

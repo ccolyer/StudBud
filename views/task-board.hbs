@@ -1,1 +1,87 @@
-Taskz yo
+<!---This is the Nav bar.-->
+<header>
+  <div style="margin-left:97%;">
+    <img id="accountlogo" src="images/account_logo.png" alt="" />
+  </div>
+  <nav>
+    <div class="sideNav">
+      <a href="../"><img
+          class="Logo2"
+          style="width: 100px; height: auto"
+          src="images/Logo2.png"
+          alt="Logo"
+        /></a>
+      <a>
+        <ul class="nav_links">
+          <li>
+            <a href="/dashboard">
+              <span class="material-symbols-outlined"> dashboard </span>
+              Dashboard</a>
+          </li>
+          <li class="active">
+            <a href="/task-board">
+              <span class="material-symbols-outlined"> task </span>
+              Task Board</a>
+          </li>
+          <li>
+            <a href="/time-tracker">
+              <span class="material-symbols-outlined"> timer </span>
+              Time Tracker</a>
+          </li>
+          <li>
+            <a href="/library">
+              <span class="material-symbols-outlined"> auto_stories </span>
+              Library</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="material-symbols-outlined">
+                settings
+              </span>Settings</a>
+          </li>
+        </ul>
+      </a>
+    </div>
+  </nav>
+</header>
+<body style="background-color:#D7EDEB;">
+  <h1 class="PageTitle"> Your Task Board</h1>
+  <p class="PageInstruction">Create new tasks, drop and drag to organise them
+    into appropriate categories.</p>
+
+     <form id="taskform" style="margin-left:17%; margin-top:20px;">
+      <label for="task">Task:</label>
+      <input type="text" name="task" id="taskInput">
+
+      <br>
+    <!-- Date input -->
+      <label for="dueDate">Due Date: </label>
+      <input type="date" name="dueDate" id="dueDateInput">
+      <br>
+    <!-- Time input -->
+    <label for="completionTime">Completion Time: </label>
+      <input type="time" name="completionTime" id="completionTimeInput">
+
+      <br>
+
+    <label for="estimatedTime">Estimated completion time (in mins):</label>
+    <input type="number" name="estimatedTime" id="estimatedTimeInput">
+    <!-- Priority -->
+    <br>
+
+    <label for="priority">Task Priority:</label>
+    <select name="prority" id="priorityInput">
+      <option value="">Select one</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+
+    <br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <ul id="tasklist">
+    </ul>
+    <script src="solution.js"></script>
+</body>

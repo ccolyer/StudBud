@@ -68,9 +68,9 @@ h4 {
 p {
   font-family: "Brandon Grotesque";
   color: #fffdf8;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 22px;
-  line-height: 27px;
+  line-height: 28px;
 }
 
 .login {
@@ -135,6 +135,7 @@ button:hover {
 
 .signupButton2 {
   margin-left: 100px;
+  width: 100%;
 }
 
 .signupButton3 {
@@ -225,7 +226,7 @@ button:hover {
 }
 
 .landingContainer {
-  height: 620px;
+  height: 610px;
 }
 
 .landingImage_signup,
@@ -237,7 +238,6 @@ button:hover {
 
 .landingImage {
   margin-left: 650px;
-  margin-top: -180px;
   background-color: transparent;
 }
 
@@ -312,19 +312,19 @@ button:hover {
   font-family: "Brandon Grotesque";
 }
 
-.offerings{
-  background-color: #FFA5B0;
+.offerings {
+  background-color: #ffa5b0;
   padding: 20px;
   justify-content: center;
   display: flex;
 }
 
-.offering{
+.offering {
   background-color: #fffdf8;
   width: 250px;
   height: 280px;
   border-radius: 30px;
-  color: #6C6C6C;
+  color: #6c6c6c;
   text-align: center;
   padding: 30px;
   display: inline-block;
@@ -332,14 +332,212 @@ button:hover {
   margin-right: 40px;
 }
 
-
 .material-symbols-outlined {
   font-size: 54px;
   padding-bottom: 20px;
 }
 
-.contentblock{
-  margin: 0;
-  background-color: #FFA5B0;
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
+.contentblock1,
+.contentblock2,
+.contentblock3,
+.contentblock4 {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  padding: 7% 7%;
+  display: flex;
+}
+
+.contentblock1 {
+  background-color: #f8919e;
+}
+
+.contentblock2 {
+  background-color: #fcf7e8;
+}
+
+.contentblock3 {
+  background-color: #9fb71a;
+}
+
+.contentblock4 {
+  background-color: #38a69b;
+}
+
+.contentblock5 {
+  margin: 0;
+  width: 100vw;
+  object-fit: scale-down;
+  scroll-snap-align: start;
+}
+
+#content_textbox {
+  margin-right: 0px;
+}
+
+#content_textbox2 {
+  margin-right: 0px;
+  color: #212121;
+}
+
+#content_textbox2 h1 {
+  color: #38a69b;
+}
+
+#content_textbox2 p {
+  color: #38a69b;
+  font-weight: 400;
+}
+
+#mockup_block {
+  margin-left: 15px;
+  margin-top: 0px;
+}
+
+#mockup_footer {
+  width: 100vh;
+  height: 100vh;
+}
+
+.footer_text {
+  display: flex;
+  justify-content: center;
+  margin-top: -180px;
+  margin-bottom: 20px;
+}
+
+.footer_signupbutton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.sidenav * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav{
+  width: 200px;
+  height: 100vh;
+  background-color:#fffdf8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 20px 30px;
+}
+
+.sidenav li{
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6c6c6c;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.sidenav a{
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6c6c6c;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.sidenav header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo2 {
+  width: 100px;
+  height: auto;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+
+.sideNav{
+  width: 200px;
+  height: 100vh;
+  background-color:#fffdf8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 20px 30px;
+}
+
+.nav_links{
+  list-style: none;
+  position: relative;
+  margin-top: 40px;
+}
+
+.nav_links li{
+  padding: 10px 0;
+}
+
+.nav_links li a{
+  display: flex;
+  align-items: center;
+}
+
+.nav_links li a span{
+ font-size: 22px;
+ margin-right: 15px;
+}
+
+.nav_links li:hover a{
+color: #38a69b;
+cursor: pointer;
+}
+
+ul li.active a{
+  color: #38a69b;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px){
+  .sideNav{
+      width: 110px;
+  }
+}
+
+.PageTitle{
+  font-family: 'Museo Sans Rounded';
+  font-size: 25px;
+font-weight: 600;
+  color: #30373A;
+  text-align: left;
+  padding: 10px 17%;
+}
+
+.PageInstruction{
+  font-family: 'Brandon Grotesque';
+  font-size: 20px;
+font-weight: 400;
+  color: #30373A;
+  text-align: left;
+  padding: 0px 17%;
+  margin-right: 42%;
+}
+
+.taskform{
+margin-left: 17%;
+}
+
+#accountlogo{
+  width: 33px;
+  margin-top: 10px;
+}

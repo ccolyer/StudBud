@@ -1,5 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
+const { engine: handlebars } = require('express-handlebars');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -16,7 +17,12 @@ const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
+app.engine('hbs', handlebars({
+  extname: '.hbs',
+  layoutsDir: __dirname + '/views',
+}));
 app.set('view engine', 'hbs');
+app.set('views', './views');
 
 app.use(logger('dev'));
 app.use(express.json());

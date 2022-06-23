@@ -12,7 +12,7 @@ libraryForm.addEventListener("submit", (event) => {
 
 // -- Functions that actually do stuff -- //
 
-// This function adds a reading to our library and also renders it
+// -- This function adds a reading to our library and also renders it -- //
 function addToLibrary(title, url) {
   console.log("ADD:", title, url);
 
@@ -37,7 +37,7 @@ function addToLibrary(title, url) {
   libraryForm.reset();
 }
 
-// This renders the item in HTML, inspired by the example
+// -- This renders the item in HTML, inspired by the example -- //
 function renderItem(title, url, id) {
   const item = document.createElement("li");
   item.innerHTML = `<div class="Lib">
@@ -79,5 +79,5 @@ function rememberPriorItems() {
   }
 }
 
-// Call this when the page loads so we make sure to remember what items were previously saved
+// -- Call this when the page loads so we make sure to remember what items were previously saved -- //
 rememberPriorItems();

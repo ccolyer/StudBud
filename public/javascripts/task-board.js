@@ -41,10 +41,9 @@ function addTask(title, dueDate, estCompletionTime, priority) {
   taskForm.reset();
 }
 
-// This renders the item in HTML, inspired by the example
+// -- This renders the item in HTML, inspired by the example -- //
 function renderItem(title, dueDate, estCompletionTime, priority, checked, id) {
   const item = document.createElement("li");
-  // TODO: add more to this
   item.innerHTML = `<div class="taskOutput">
         <div class="taskContent" id="taskContent${id}">
             <div class="taskTitle">
@@ -118,5 +117,5 @@ function rememberPriorItems() {
   }
 }
 
-// Call this when the page loads so we make sure to remember what items were previously saved
+// -- Call this when the page loads so we make sure to remember what items were previously saved -- //
 rememberPriorItems();

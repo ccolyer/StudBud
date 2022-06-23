@@ -24,7 +24,7 @@ resetButton.addEventListener("click", (event) => {
 let minutes = 0;
 let seconds = 0;
 
-// This will store the timer interval we use
+// -- This will store the timer interval we use -- //
 let interval;
 
 function startTimer() {

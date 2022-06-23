@@ -5,19 +5,19 @@ const stopButton = document.getElementById("stopButton");
 const resetButton = document.getElementById("resetButton");
 
 // -- HTML event listeners -- //
-startButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    startTimer();
+startButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  startTimer();
 });
 
-stopButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    stopTimer();
+stopButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  stopTimer();
 });
 
-resetButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    resetTimer();
+resetButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  resetTimer();
 });
 
 // -- Functions that actually do stuff -- //
@@ -54,5 +54,5 @@ function stopTimer() {
 function resetTimer() {
   seconds = 0;
   minutes = 0;
-  timerLabel.innerText = '00 : 00';
+  timerLabel.innerText = "00 : 00";
 }

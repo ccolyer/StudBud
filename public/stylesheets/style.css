@@ -133,7 +133,7 @@ button:hover {
   font-weight: 800;
 }
 
-.signupButton{
+.signupButton {
   margin-top: 10px;
   margin-bottom: 15px;
 }
@@ -546,8 +546,64 @@ ul li.active a {
   margin-right: 15%;
 }
 
-.taskform {
-  margin-left: 17%;
+.PageInstructionDash {
+  font-family: "Brandon Grotesque";
+  font-size: 20px;
+  font-weight: 400;
+  color: #30373a;
+  text-align: left;
+  padding: 0px 17%;
+  margin-right: 15%;
+}
+
+#taskForm {
+  font-family: "Brandon Grotesque";
+  font-size: 20px;
+  width: 800px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fffdf8;
+  color: #30373a;
+  line-height: 2;
+}
+
+.taskContent {
+  font-family: "Brandon Grotesque";
+  font-size: 20px;
+  color: #fffdf8;
+}
+
+.taskOutput {
+  background-color: #38a69b;
+  border-radius: 10px;
+  width: 800px;
+  height: 80px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.additionalDetails {
+  font-weight: 300;
+}
+
+.taskActions {
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flexbox;
+}
+
+.taskActions button {
+  background-color: #fffdf8;
+  opacity: 95%;
+  color: #38a69b;
+  padding: 3px 5px;
+  position: relative;
+  top: 30px;
 }
 
 #accountlogo {
@@ -571,22 +627,132 @@ ul li.active a {
   margin-top: 15px;
 }
 
-#newReadingForm {
+.newReadingForm {
   font-family: "Brandon Grotesque";
+  font-size: 20px;
   margin-top: 10px;
+  color: #30373a;
 }
 
-.timerContainer{
+.lib {
+  background-color: #38a69b;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+li {
+  font-family: "Brandon Grotesque";
+  font-size: 20px;
+  margin-top: 10px;
+  color: #fffdf8;
+  list-style: none;
+}
+
+a {
+  font-family: "Brandon Grotesque";
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #fffdf8;
+  list-style: none;
+}
+
+#readingLink {
+  font-family: "Brandon Grotesque";
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #fffdf8;
+  list-style: none;
+}
+
+.readingActions button {
+  float: right;
+  margin: 8px;
+  background-color: #fffdf8;
+  opacity: 95%;
+  color: #38a69b;
+  padding: 5px;
+}
+
+.readingActions button:hover {
+  float: right;
+  margin: 8px;
+  background-color: #ffffff;
+  opacity: 100%;
+  color: #38a69b;
+  padding: 5px;
+}
+
+.timerContainer {
   margin-left: 30%;
   margin-top: 30px;
   background-color: #fffdf8;
   width: 700px;
   height: 450px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-#taskform{
-  font-family: 'Brandon Grotesque';
+#timerLabel {
+  font-family: "Museo Sans Rounded";
+  font-size: 90px;
+  margin: 5px;
+  position: absolute;
+  top: 120px;
+}
+
+#startButton,
+#stopButton,
+#resetButton {
+  margin: 8px;
+  color: #fffdf8;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+  position: relative;
+  top: 280px;
+}
+
+#startButton {
+  background-color: #9fb71a;
+  opacity: 80%;
+}
+
+#startButton:hover {
+  background-color: #9fb71a;
+  opacity: 100%;
+}
+
+#stopButton {
+  background-color: #f05757;
+  opacity: 80%;
+}
+
+#stopButton:hover {
+  background-color: #f05757;
+  opacity: 100%;
+}
+
+#resetButton {
+  background-color: #f8919e;
+  opacity: 80%;
+}
+
+#resetButton:hover {
+  background-color: #f8919e;
+  opacity: 100%;
+}
+
+#taskform {
+  font-family: "Brandon Grotesque";
 }
 
 .taskList {
@@ -595,4 +761,36 @@ ul li.active a {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+#dueDate,
+#estCompletionTime,
+#priority {
+  background-color: #e2e2e2;
+  border: none;
+  height: 25px;
+  width: 170px;
+  color: #30373a;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#submitButton {
+  margin-top: 8px;
+  color: #fffdf8;
+  background-color: #fab217;
+  opacity: 80%;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
+}
+
+#submitButton:hover {
+  margin-top: 8px;
+  color: #fffdf8;
+  background-color: #fab217;
+  opacity: 100%;
+  padding: 5px;
+  width: 80px;
+  height: 40px;
 }

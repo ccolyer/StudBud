@@ -45,7 +45,7 @@ function addTask(title, dueDate, estCompletionTime, priority) {
 function renderItem(title, dueDate, estCompletionTime, priority, checked, id) {
   const item = document.createElement("li");
   // TODO: add more to this
-  item.innerHTML = `<div>
+  item.innerHTML = `<div class="taskOutput">
         <div class="taskContent" id="taskContent${id}">
             <div class="taskTitle">
                 ${title}

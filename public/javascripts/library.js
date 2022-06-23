@@ -40,13 +40,13 @@ function addToLibrary(title, url) {
 // This renders the item in HTML, inspired by the example
 function renderItem(title, url, id) {
   const item = document.createElement("li");
-  item.innerHTML = `<div>
+  item.innerHTML = `<div class="Lib">
         <div class="readingContent">
             <div class="readingTitle">
                 ${title}
             </div>
             <div class="readingUrl">
-                <a target="_blank" href="${url}">${url}</a>
+                <a target="_blank" id="readingLink" href="${url}">${url}</a>
             </div>
         </div>
         <div class="readingActions">
@@ -73,7 +73,7 @@ function renderItem(title, url, id) {
 function rememberPriorItems() {
   const stringReadings = localStorage.getItem("studBudReadings");
   const listOfReadings = stringReadings ? JSON.parse(stringReadings) : [];
-  
+
   for (const reading of listOfReadings) {
     renderItem(reading.title, reading.url, reading.id);
   }

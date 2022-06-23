@@ -1,4 +1,4 @@
-<!---his is the Nav bar.-->
+<!---is is the Nav bar.-->
 <header>
   <div style="margin-left:97%;">
     <img id="accountlogo" src="images/account_logo.png" alt="" />
@@ -44,31 +44,32 @@
     </div>
   </nav>
 </header>
-<body style="background-color:#D7EDEB;">
-  <h1 class="PageTitle"> Your Library</h1>
+<style>
+  body{ background-color: #D7EDEB; }
+</style>
 
-  <div class="newReadingForm">
-    <form id="libraryForm">
-      <label for="title">Title</label>
-      <input
-        type="text"
-        class="input_box"
-        placeholder="Enter reading title"
-        id="title"
-      />
-      <label for="link">Link</label>
-      <input
-        type="text"
-        class="input_box"
-        placeholder="Enter reading url"
-        id="url"
-      />
-      <button type="submit" class="createReadingButton">Add Reading</button>
-    </form>
+<h1 class="PageTitle"> Your Library</h1>
+<div class="newReadingForm">
+  <form id="libraryForm">
+    <label for="title">Title</label>
+    <input
+      type="text"
+      class="input_box"
+      placeholder="Enter reading title"
+      id="title"
+    />
+    <label for="link">Link</label>
+    <input
+      type="text"
+      class="input_box"
+      placeholder="Enter reading url"
+      id="url"
+    />
+    <button type="submit" class="createReadingButton">Add Reading</button>
+  </form>
 
-    <ul class="readingsList" id="readingsList">
-      
-    </ul>
-  </div>
-</body>
+  <ul class="readingsList" id="readingsList">
+
+  </ul>
+</div>
 <script src="/javascripts/library.js"></script>

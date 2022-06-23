@@ -1,4 +1,4 @@
-<!---his is the Nav bar.-->
+<!---s the Nav bar.-->
 <header>
   <div style="margin-left:97%;">
     <img id="accountlogo" src="images/account_logo.png" alt="" />
@@ -44,24 +44,25 @@
     </div>
   </nav>
 </header>
-<body style="background-color:#D7EDEB;">
-  <div class="pageContainer">
-    <h1 class="PageTitle"> Your Time Tracker</h1>
-    <p class="PageInstruction">Track your study work flow and breaks with the
-      Pomodoro method.</p>
-    <div class="timerContainer">
-      <div id="timerLabel">00 : 00</div>
-
-      <button type="button" id="startButton">
-        Start
-      </button>
-      <button type="button" id="stopButton">
-        Stop
-      </button>
-      <button type="button" id="resetButton">
-        Reset
-      </button>
-    </div>
+<style>
+  body{ background-color: #D7EDEB; }
+</style>
+<div class="pageContainer">
+  <h1 class="PageTitle"> Your Time Tracker</h1>
+  <p class="PageInstruction">Track and manage your study time with our basic
+    time tracker.</p>
+  <div class="timerContainer">
+    <div id="timerLabel">00 : 00</div>
+    <button type="button" id="startButton">
+      Start
+    </button>
+    <button type="button" id="stopButton">
+      Stop
+    </button>
+    <button type="button" id="resetButton">
+      Reset
+    </button>
   </div>
-</body>
+</div>
+
 <script src="javascripts/time-tracker.js"></script>

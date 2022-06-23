@@ -1,4 +1,4 @@
-<!---s is the Nav bar.-->
+<!--- the Nav bar.-->
 <header>
   <div style="margin-left:97%;">
     <img id="accountlogo" src="images/account_logo.png" alt="" />
@@ -44,39 +44,52 @@
     </div>
   </nav>
 </header>
-<body style="background-color:#D7EDEB;">
-  <h1 class="PageTitle"> Your Task Board</h1>
-  <p class="PageInstruction">Create new tasks, drop and drag to organise them
-    into appropriate categories.</p>
+<style>
+  body{ background-color: #D7EDEB; }
+</style>
+<h1 class="PageTitle"> Your Task Board</h1>
+<p class="PageInstruction">Create new tasks, prioritise and specify due dates,
+  and get your work in on time.</p>
 
-  <form id="taskForm" style="margin-left:30%; margin-top:20px;">
-    <label for="task">Task:</label>
-    <input type="text" name="task" id="title" />
+<form id="taskForm" style="margin-left:30%; margin-top:20px;">
+  <label for="task">Task:</label>
+  <input
+    type="text"
+    name="task"
+    id="title"
+    style="background-color: #e2e2e2;
+  border: none;
+  height: 25px;
+  width: 170px;
+  color: #30373a;
+  border-radius: 5px;
+  padding: 5px;"
+  />
 
-    <br />
-    <!-- Date input -->
-    <label for="dueDate">Due Date: </label>
-    <input type="date" name="dueDate" id="dueDate" />
-    <br />
-    <!-- Time input -->
-    <label for="estimatedTime">Estimated completion time (in mins):</label>
-    <input type="number" name="estimatedTime" id="estCompletionTime" />
-    <!-- Priority -->
-    <br />
+  <br />
+  <!-- Date input -->
+  <label for="dueDate">Due Date: </label>
+  <input type="date" name="dueDate" id="dueDate" />
+  <br />
+  <!-- Time input -->
+  <label for="estimatedTime">Estimated completion time (in mins):</label>
+  <input type="number" name="estimatedTime" id="estCompletionTime" />
+  <!-- Priority -->
+  <br />
 
-    <label for="priority">Task Priority:</label>
-    <select name="prority" id="priority">
-      <option value="">Select one</option>
-      <option value="Low">Low</option>
-      <option value="Medium">Medium</option>
-      <option value="High">High</option>
-    </select>
+  <label for="priority">Task Priority:</label>
+  <select name="prority" id="priority">
+    <option value="">Select one</option>
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+  </select>
 
-    <br />
+  <br />
 
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="taskList" class="taskList">
-  </ul>
-</body>
+  <button id="submitButton" type="submit">Submit</button>
+</form>
+<ul id="taskList" class="taskList">
+</ul>
+
 <script src="javascripts/task-board.js"></script>
